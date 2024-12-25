@@ -2,7 +2,7 @@
 #include <Servo.h>
 #include <SoftwareSerial.h>
 
-SoftwareSerial mySerial(0, 1); // RX, TX pinleri
+SoftwareSerial mySerial(0, 1); // RX, TX pins
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 Servo servoMotor;
 
@@ -12,7 +12,7 @@ void setup() {
   lcd.begin(16, 2);
   servoMotor.attach(9);
   lcd.setCursor(0, 0);
-  lcd.print("   GOMULU ");
+  lcd.print("   HELLO ");
   lcd.setCursor(0, 1);
   lcd.print("   ...");
 }
